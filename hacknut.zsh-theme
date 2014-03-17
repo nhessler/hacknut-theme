@@ -23,13 +23,13 @@ function prompt_char {
     echo '○'
 }
 
-function monokai_timestamp {
+function hacknut_timestamp {
     echo "%{$FX[bold]%}%{$fg[white]%}%*%{$FX[no-bold]%}"
 }
 
-function monokai_dir {
+function hacknut_dir {
     echo "%{$fg[cyan]%}%c%  %{$reset_color%}"
 }
 
-RPROMPT='%{$reset_color%}$(monokai_timestamp)$ZSH_THEME_PROMPT_SEPARATOR%{$fg[blue]%}$(ruby_prompt)%{$reset_color%} $EPS1'
-PROMPT='$(git_custom_status)$(monokai_dir)%{$fg[magenta]%}$(prompt_char)%{$reset_color%} '
+RPROMPT='%{$reset_color%}$(hacknut_timestamp)$ZSH_THEME_PROMPT_SEPARATOR%{$fg[blue]%}$(ruby_prompt)%{$reset_color%} $EPS1'
+PROMPT='$(git_custom_status)$(hacknut_dir)%{$fg[magenta]%}$(prompt_char)%{$reset_color%} '
